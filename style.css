@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------- NAVIGATION BAR -----------------------*/
+.my-portfolio {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(pexels-fauxels-3184451.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.portfolio-nav {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 18em;
+}
+
+.span-text {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 500;
+    width: 1px;
+    display: flex;
+    overflow: hidden;
+    animation: lefts forwards 2s ease-in;
+}
+@keyframes lefts {
+    from{
+        width: 2PX;
+    }
+    to{
+        width: 120px;
+    }
+}
+nav button a {
+    text-decoration: none;
+    color: #000;
+}
+ ul {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    gap: 4em;
+}
+.a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-nav button {
+    height: 3em;
+    width: 9em;
+    border: none;
+    background-color: #fff;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 17px;
+}
+.animation-text {
+    display: flex;
+    width: fit-content;
+    height: 40px;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 0px; 
+    font-family: 'Fredoka One', cursive;
+}
+.pp p{
+    font-size: 100px;
+    font-weight: bold;
+}
+.portfolio-nav button:hover {
+    text-decoration: underline;
+}
+
+
+.home:hover {
+    text-decoration: underline;
+}
+.works:hover {
+    text-decoration: underline;
+}
+.about:hover {
+    text-decoration: underline;
+}
+.contact:hover {
+    text-decoration: underline;
+}
+/*-------------------------- PORTFOLIO CONTENT ---------------------*/
+.pp{
+    margin-top: -40px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main-content {
+    /* font-family: 'Nunito', sans-serif; */
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.main-content button {
+    height: 3em;
+    width: 9em;
+    border: none;
+    background-color: #fff;
+    color: black;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 15px;
+    letter-spacing: 2pt;
+}
+
+.btn1{
+    background: transparent;
+    border: none;
+}
+.btn{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    height: 3em;
+    width: 9em;
+    border: none;
+    background-color: #fff;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 17px;
+}
+.animation-text p{
+    /* position: absolute; */
+    transition: 3s;
+    font-size: 35px;
+    color: white;
+    font-weight: 200;
+    margin-top: 0px;
+    animation: up linear 4s infinite;
+}
+@keyframes up {
+    from{
+        transform: translateY(75px);
+    }
+    to{
+        transform: translateY(-70px);
+    }
+}
+.main-content button:hover {
+    text-decoration: underline;
+}
+/*-------------------------------- FOOTER -------------------------*/
+footer {
+    /* background-image:  linear-gradient(rgba(0, 0, 0, 0.779),rgba(0, 0, 0, 0.779)); */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 11%;
+    position: fixed;
+    bottom: 30%;
+    gap: 3em;
+    right: 0;
+    padding: 10px 30px;
+}
+
+.a{
+    color: black;
+}
+.fa-brands {
+    color: #fff;
+    font-size: 25px;
+}
+
+.fa-brands:hover {
+    color: rgba(0, 0, 0, 0.779);
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+}
+.hambuger{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .hambuger{
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        z-index: 7;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        gap: 8px;
+        top: 10px;
+    }
+    .hambuger p{
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        transition: .4s;
+        border-radius: 2px;
+        
+    }
+    .a{
+        display: none;
+    }
+    .aa{
+        display: none;
+    }
+    nav{
+        width: 100%;
+    }
+    .h1{
+        text-align: center;
+        letter-spacing: normal;
+    }
+    .h2{
+        text-align: center;
+        letter-spacing: normal;
+    }
+    nav li{
+       margin-top: -10px;
+    }
+    nav ul{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 40%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.979);
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        font-size: larger;
+        height: 164.5%;
+        z-index: 5;
+        transition: 2s;
+    }
+    nav button{
+        display: none;
+        background-color: #fff;
+        color: black;
+        margin-top: 160%;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+        z-index: 7;
+    }
+    nav h2{
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+    nav button a{
+        color: black;
+    }
+   .PP{
+        display: flex;
+        gap: 0px;
+    }
+    .main-content{
+        font-size: 3em;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 0px;
+        height: fit-content;
+    }
+    .hi{
+        width: 300px;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .my-portfolio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
