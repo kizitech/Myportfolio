@@ -9,7 +9,7 @@
     font-family: 'Inter', sans-serif;
     color: #fff;
     font-size: 16px;
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(pexels-fauxels-3184451.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(Photos/pexels-fauxels-3184451.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -42,10 +42,16 @@
         width: 120px;
     }
 }
+
 nav button a {
     text-decoration: none;
     color: #000;
 }
+
+nav button a:hover {
+    text-decoration: underline;
+}
+
  ul {
     list-style: none;
     display: flex;
@@ -71,6 +77,7 @@ nav button a {
     font-size: large;
     font-weight: 600;
     border-radius: 17px;
+    margin-top: 10px;
 }
 .animation-text {
     display: flex;
@@ -85,13 +92,11 @@ nav button a {
     font-family: 'Fredoka One', cursive;
 }
 .pp p{
-    font-size: 100px;
+    font-size: 107px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1pt;
 }
-.portfolio-nav button:hover {
-    text-decoration: underline;
-}
-
 
 .home:hover {
     text-decoration: underline;
@@ -141,7 +146,7 @@ a{
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 22px;
     letter-spacing: 2pt;
 }
 
@@ -149,6 +154,11 @@ h3 {
     background: transparent;
     border: none;
 }
+
+.btn1:hover {
+    text-decoration: underline;
+}
+
 .btn{
     text-decoration: none;
     display: flex;
@@ -170,16 +180,34 @@ h3 {
     color: white;
     font-weight: 200;
     margin-top: 0px;
-    animation: up linear 4s infinite;
+    font-family: 'Fredoka One', cursive;
 }
-@keyframes up {
+
+.pS::before{
+    content: '';
+    animation: up linear 4s infinite;
+
+}
+
+@keyframes up{
+    0%{
+        content: 'Web Developer';
+    }
+    50%{
+        content: 'Front-End Developer';
+    }
+    100%{
+        content: 'Web Designer';
+    }
+}
+/* @keyframes up {
     from{
         transform: translateY(75px);
     }
     to{
         transform: translateY(-70px);
     }
-}
+} */
 .main-content button:hover {
     text-decoration: underline;
 }
@@ -196,7 +224,7 @@ footer {
     bottom: 30%;
     gap: 3em;
     right: 0;
-    padding: 10px 30px;
+    padding: 0px 30px;
 }
 
 .a{
@@ -207,8 +235,50 @@ footer {
     font-size: 25px;
 }
 
-.fa-brands:hover {
-    color: rgba(0, 0, 0, 0.779);
+.fa-whatsapp {
+    transition: 2s;
+}
+.fa-facebook {
+    transition: 2s;
+}
+.fa-instagram {
+    transition: 2s;
+}
+.fa-twitter {
+    transition: 2s;
+}
+.fa-github {
+    transition: 2s;
+}
+.fa-linkedin {
+    transition: 2s;
+}
+
+
+
+.fa-whatsapp:hover {
+    color: #25D366;
+    transform: rotate(360deg);
+}
+.fa-facebook:hover {
+    color: #3b5998;
+    transform: rotate(360deg);
+}
+.fa-instagram:hover {
+    color: #d62976;
+    transform: rotate(360deg);
+}
+.fa-twitter:hover:hover {
+    color:  #1DA1F2;
+    transform: rotate(360deg);
+}
+.fa-linkedin:hover {
+    color: #0e76a8;
+    transform: rotate(360deg);
+}
+.fa-github:hover {
+    color: #000000c7;
+    transform: rotate(360deg);
 }
 
 footer ul{
