@@ -33,8 +33,8 @@
     background-size: cover;
     font-size: var(--font-sm);
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.50),
-            rgba(0, 0, 0, 0.50)),
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
         url(Images/hero.jpg);
 
 }
@@ -333,4 +333,255 @@
 
 .fa-github:hover {
     color: #000000c7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT ME PAGE */
+.contact-container {
+
+    height: 100vh;
+    width: 100vw;
+
+    padding: 0 3%;
+    overflow: hidden;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: var(--font-sm);
+    font-family: var(--montserrat);
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(Images/contact.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-content {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    gap: 20px;
+    display: flex;
+    padding: 30px;
+    max-width: 500px;
+    position: relative;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: brightness(0.5);
+}
+
+.message {
+    color: var(--white);
+    font-size: var(--font-sm);
+}
+
+.flex {
+    gap: 6px;
+    width: 100%;
+    display: flex;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    outline: 0;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--white);
+    letter-spacing: 1px;
+    font-size: var(--font-sm);
+    padding: 30px 30px 45px 30px;
+    background-color: transparent;
+    border: 3px solid var(--white);
+}
+
+.form label .input+span {
+    top: 20px;
+    left: 10px;
+    cursor: text;
+    position: absolute;
+    color: var(--white);
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 15px;
+    font-size:0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    top: 7px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid+span {
+    color: green;
+}
+
+.input01 {
+    outline: 0;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--white);
+    padding: 10px 10px 20px 10px;
+    background-color: transparent;
+    border: 3px solid var(--white);
+}
+
+.form label .input01+span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: var(--white);
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input01:placeholder-shown+span {
+    top: 40px;
+    font-size: 0.9em;
+}
+
+.form label .input01:focus+span,
+.form label .input01:valid+span {
+    top: 62px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input01:valid+span {
+    color: green;
+}
+
+.fancy {
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    border: 3px solid var(--white);
+    border-radius: 0px;
+    box-sizing: border-box;
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 8px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    font-size: var(--font-sm);
+}
+
+.fancy::before {
+    content: " ";
+    width: 1.7rem;
+    height: 2px;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    background: var(--white);
+    transform-origin: center;
+    transform: translateY(-50%);
+    transform: translateX(230%);
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+    line-height: 1.5em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: translateX(30%);
+    transition: all 0.3s ease-in-out;
+    font-size: calc(1.2 * var(--font-sm));
+}
+
+.fancy .top-key {
+    height: 2px;
+    top: -2px;
+    left: 0.625rem;
+    width: 1.5625rem;
+    position: absolute;
+    background: rgb(15, 12, 5);
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: rgb(15, 12, 5);
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: rgb(15, 12, 5);
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+    color: var(--black);
+    background: var(--white);
+}
+
+.fancy:hover::before {
+    width: 1.5rem;
+    background: var(--black);
+}
+
+.fancy:hover .text {
+    color: var(--black);
+    padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
 }
