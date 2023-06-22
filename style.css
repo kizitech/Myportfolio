@@ -27,8 +27,8 @@
 .wrapper-container {
     padding: 0 3%;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: auto;
+    /* overflow: hidden; */
     color: var(--white);
     background-size: cover;
     font-size: var(--font-sm);
@@ -367,9 +367,10 @@
         linear-gradient(rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)),
         url(Images/contact.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .contact-content {
@@ -388,8 +389,7 @@
     position: relative;
     border-radius: 10px;
     flex-direction: column;
-    background-color: transparent;
-    backdrop-filter: brightness(0.5);
+    background-color: rgba(0, 0, 0, 0.554);
 }
 
 .message {
@@ -585,3 +585,12 @@
     right: 0;
     width: 0;
 }
+
+
+
+
+
+
+
+
+
